@@ -1,0 +1,138 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+     ::root {}
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    P {
+        font-size: 16px;
+    }
+    /* h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {} */
+    /* HELPERS */
+    
+    .container {
+        width: 1200px;
+        max-width: 90%;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 40px
+    }
+    
+    .btn {
+        display: inline-block;
+        border: none;
+        border-radius: none;
+        padding: 1rem 1.5rem;
+        background: #000;
+        margin-top: 20px;
+        color: #fff;
+    }
+    
+    .btn-dark {
+        background-color: #000;
+    }
+    /* HEADER */
+    
+    .header {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: #fff;
+    }
+    
+    .header .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+    }
+    
+    .header .nav-lists {
+        display: flex;
+    }
+    
+    .header .nav-link {
+        padding: 10px 20px;
+        color: #000;
+        font-size: 16px;
+    }
+    
+    .header .nav-icons {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header .nav-icon {
+        padding: 10px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .header .nav-icon:hover,
+    .header .nav-link:hover {
+        cursor: pointer;
+    }
+    /* HERO */
+    
+    .hero {
+        background: url('./images/hero-banner.png') center center/cover;
+        height: 100vh;
+    }
+    
+    .hero .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+    }
+    
+    .hero img {
+        height: 500px;
+        width: 500px;
+    }
+    
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    
+    .hero h2 {
+        font-size: 40px;
+        margin-bottom: 15px;
+        /* font-weight: 700; */
+    }
+    
+    .hero p {
+        width: 500px;
+    }
+    
+    .hero .hero-icon {
+        font-size: 20px;
+    }
+    /* COLLECTION */
