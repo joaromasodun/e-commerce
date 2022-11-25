@@ -22,12 +22,10 @@
     P {
         font-size: 16px;
     }
-    /* h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {} */
+    
+    section {
+        padding: 2rem 0 5rem 0;
+    }
     /* HELPERS */
     
     .container {
@@ -36,6 +34,10 @@
         overflow: hidden;
         margin: 0 auto;
         padding: 40px
+    }
+    
+    .section-header {
+        text-align: center;
     }
     
     .btn {
@@ -135,4 +137,112 @@
     .hero .hero-icon {
         font-size: 20px;
     }
-    /* COLLECTION */
+    /* SERVICES */
+    
+    .services .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    .services .service {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .service .service-icon-bg {
+        background: hsl(5, 100%, 69%);
+        border-radius: 50%;
+    }
+    
+    .services .service-icon {
+        height: 70px;
+        width: 70px;
+        filter: brightness(0) invert(1);
+        padding: 15px;
+    }
+    
+    .services .text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .services p {
+        font-size: 13px;
+    }
+    /* PRODUCTS */
+    
+    .products .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        column-gap: 10px
+    }
+    
+    .products .product-image {
+        margin-bottom: 10px;
+        width: 260px;
+    }
+    
+    .products .product {
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    .product .product-details {
+        text-align: center;
+    }
+    
+    .product span {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    
+    .product h3 {
+        font-size: 17px;
+        margin-top: 10px;
+        font-weight: 700;
+    }
+    
+    .product P {
+        font-size: 18px;
+        margin-top: 10px;
+        color: hsl(5, 100%, 69%);
+        font-weight: 500;
+    }
+    
+    .products .cta-lists {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        /* transition: 5s hover ease-in; */
+        transform: translateY(-100%)
+    }
+    
+    .product .cta-lists.show-cta {
+        transform: translateY(100%)
+    }
+    
+    .products .product-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        margin-bottom: 15px;
+        background: #fff;
+        height: 40px;
+        width: 40px;
+        color: #000;
+        border-radius: 50%;
+    }
+    
+    .products .product-link:hover {
+        background: hsl(5, 100%, 69%);
+        color: #fff;
+    }
